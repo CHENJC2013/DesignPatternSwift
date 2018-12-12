@@ -12,6 +12,12 @@
 		E06B053621BFAD4400FCB0B8 /* ChainOfResponsibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B053321BFAD4400FCB0B8 /* ChainOfResponsibility.swift */; };
 		E06B053721BFAD4400FCB0B8 /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B053421BFAD4400FCB0B8 /* Prototype.swift */; };
 		E06B053821BFAD4400FCB0B8 /* ChainOfResponsibility2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B053521BFAD4400FCB0B8 /* ChainOfResponsibility2.swift */; };
+		E06B053A21BFB03300FCB0B8 /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B053921BFB03300FCB0B8 /* Decorator.swift */; };
+		E06B053C21C0AB9100FCB0B8 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B053B21C0AB9100FCB0B8 /* Builder.swift */; };
+		E06B053E21C0B45800FCB0B8 /* Builder2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B053D21C0B45800FCB0B8 /* Builder2.swift */; };
+		E06B054021C0DE2300FCB0B8 /* SimpleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B053F21C0DE2300FCB0B8 /* SimpleFactory.swift */; };
+		E06B054221C0E37700FCB0B8 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B054121C0E37700FCB0B8 /* FactoryMethod.swift */; };
+		E06B054421C0E7DC00FCB0B8 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B054321C0E7DC00FCB0B8 /* AbstractFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +39,12 @@
 		E06B053321BFAD4400FCB0B8 /* ChainOfResponsibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibility.swift; sourceTree = "<group>"; };
 		E06B053421BFAD4400FCB0B8 /* Prototype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
 		E06B053521BFAD4400FCB0B8 /* ChainOfResponsibility2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibility2.swift; sourceTree = "<group>"; };
+		E06B053921BFB03300FCB0B8 /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
+		E06B053B21C0AB9100FCB0B8 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		E06B053D21C0B45800FCB0B8 /* Builder2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder2.swift; sourceTree = "<group>"; };
+		E06B053F21C0DE2300FCB0B8 /* SimpleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleFactory.swift; sourceTree = "<group>"; };
+		E06B054121C0E37700FCB0B8 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
+		E06B054321C0E7DC00FCB0B8 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,12 @@
 				E06B053321BFAD4400FCB0B8 /* ChainOfResponsibility.swift */,
 				E06B053521BFAD4400FCB0B8 /* ChainOfResponsibility2.swift */,
 				E06B053421BFAD4400FCB0B8 /* Prototype.swift */,
+				E06B053921BFB03300FCB0B8 /* Decorator.swift */,
+				E06B053B21C0AB9100FCB0B8 /* Builder.swift */,
+				E06B053D21C0B45800FCB0B8 /* Builder2.swift */,
+				E06B053F21C0DE2300FCB0B8 /* SimpleFactory.swift */,
+				E06B054121C0E37700FCB0B8 /* FactoryMethod.swift */,
+				E06B054321C0E7DC00FCB0B8 /* AbstractFactory.swift */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -133,9 +151,15 @@
 			files = (
 				E06B053721BFAD4400FCB0B8 /* Prototype.swift in Sources */,
 				E06B052521BE35DE00FCB0B8 /* main.swift in Sources */,
+				E06B054421C0E7DC00FCB0B8 /* AbstractFactory.swift in Sources */,
+				E06B053E21C0B45800FCB0B8 /* Builder2.swift in Sources */,
+				E06B054221C0E37700FCB0B8 /* FactoryMethod.swift in Sources */,
+				E06B054021C0DE2300FCB0B8 /* SimpleFactory.swift in Sources */,
+				E06B053C21C0AB9100FCB0B8 /* Builder.swift in Sources */,
 				E06B052C21BE35E900FCB0B8 /* Singleton.swift in Sources */,
 				E06B053821BFAD4400FCB0B8 /* ChainOfResponsibility2.swift in Sources */,
 				E06B053621BFAD4400FCB0B8 /* ChainOfResponsibility.swift in Sources */,
+				E06B053A21BFB03300FCB0B8 /* Decorator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

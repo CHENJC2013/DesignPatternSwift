@@ -52,3 +52,46 @@ doc2 = pm.offcialDocument(key: "far")
 
 print("\( unsafeBitCast(doc1.attachment, to: Int.self)) --- \( unsafeBitCast(doc2.attachment, to: Int.self))")
 
+/*********** 装饰器模式 Decorator ***********/
+let component,componentSB,componentBB: Component
+component = Window()
+componentSB = ScrollBarDecorator(comp: component)
+componentBB = BlackBorderDecorator(comp: componentSB)
+componentBB.operation()
+
+/*********** 建造者模式 Builder ***********/
+print("/*********** 建造者模式 Builder ***********/")
+var ab:ActorBuilder //针对抽象建造者编程
+ab = AngelBuilder()
+let ac = ActorController()
+let actor = ac.construct(ab: ab) //通过指挥者创建完整的建造者对象
+print("当前角色是：\(actor.face!)的\(actor.sex!)\(actor.type!)")
+/*********** 建造者模式 Builder2 ***********/
+print("/*********** 建造者模式 Builder2  ***********/")
+var ab2:ActorBuilder2 //针对抽象建造者编程
+ab2 = HeroBuilder2()
+let actor2 = ab2.construct() //通过指挥者创建完整的建造者对象
+print("当前角色是：\(actor2.face!)的\(actor2.sex!)\(actor2.type!)")
+
+/*********** 简单工厂模式 Simple Factory ***********/
+print("/*********** 简单工厂模式 Simple Factory ***********/")
+let chart: Chart = Chart2.getChart(type: "pie")
+chart.display()
+/*********** 工厂方法模式 Factory Method ***********/
+print("/*********** 工厂方法模式 Factory Method ***********/")
+let logger = DatabaseLoggerFactory().createLogger()
+logger.writeLog()
+/*********** 抽象工厂模式 Abstract Factory ***********/
+print("/*********** 抽象工厂模式 Abstract Factory ***********/")
+let spring: SkinFactory = SpringSkinFactory()
+let btn: Button = spring.createButton()
+let text: TextField = spring.createTextField()
+btn.display()
+text.display()
+
+
+
+
+
+
+
