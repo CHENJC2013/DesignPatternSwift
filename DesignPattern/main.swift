@@ -88,10 +88,24 @@ let btn: Button = spring.createButton()
 let text: TextField = spring.createTextField()
 btn.display()
 text.display()
-
-
-
-
+/*********** 适配器模式 Adapter ***********/
+print("/*********** 适配器模式 Adapter ***********/")
+let target = DeathStarSuperlaserTarget(angleHorizontal: 14.0, angleVertical: 12.0)
+let oldFormat = OldDeathStarSuperlaserTarget(target)
+print("\(oldFormat.angleH)-----\(oldFormat.angleV)")
+/*********** 桥接模式 Bridge ***********/
+print("/*********** 桥接模式 Bridge ***********/")
+let image = PNGImage()
+let imp = WindowsImp()
+image.imp = imp
+image.parseFile(fileName: "美女")
+/*********** 组合模式 Composite ***********/
+print("/*********** 组合模式 Composite ***********/")
+let folder = Folder()
+let file1 = imageFile(name: "图片1"), file2 = imageFile(name: "图片2")
+folder.add(file: file1)
+folder.add(file: file2)
+folder.killVirus()
 
 
 

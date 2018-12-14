@@ -18,6 +18,9 @@
 		E06B054021C0DE2300FCB0B8 /* SimpleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B053F21C0DE2300FCB0B8 /* SimpleFactory.swift */; };
 		E06B054221C0E37700FCB0B8 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B054121C0E37700FCB0B8 /* FactoryMethod.swift */; };
 		E06B054421C0E7DC00FCB0B8 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B054321C0E7DC00FCB0B8 /* AbstractFactory.swift */; };
+		E06B054621C0F9E600FCB0B8 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B054521C0F9E600FCB0B8 /* Adapter.swift */; };
+		E06B054821C1F84A00FCB0B8 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B054721C1F84A00FCB0B8 /* Bridge.swift */; };
+		E06B054A21C2075800FCB0B8 /* Composite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B054921C2075800FCB0B8 /* Composite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +48,9 @@
 		E06B053F21C0DE2300FCB0B8 /* SimpleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleFactory.swift; sourceTree = "<group>"; };
 		E06B054121C0E37700FCB0B8 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
 		E06B054321C0E7DC00FCB0B8 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
+		E06B054521C0F9E600FCB0B8 /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		E06B054721C1F84A00FCB0B8 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		E06B054921C2075800FCB0B8 /* Composite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,9 @@
 				E06B053F21C0DE2300FCB0B8 /* SimpleFactory.swift */,
 				E06B054121C0E37700FCB0B8 /* FactoryMethod.swift */,
 				E06B054321C0E7DC00FCB0B8 /* AbstractFactory.swift */,
+				E06B054521C0F9E600FCB0B8 /* Adapter.swift */,
+				E06B054721C1F84A00FCB0B8 /* Bridge.swift */,
+				E06B054921C2075800FCB0B8 /* Composite.swift */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -150,16 +159,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E06B053721BFAD4400FCB0B8 /* Prototype.swift in Sources */,
+				E06B054621C0F9E600FCB0B8 /* Adapter.swift in Sources */,
 				E06B052521BE35DE00FCB0B8 /* main.swift in Sources */,
 				E06B054421C0E7DC00FCB0B8 /* AbstractFactory.swift in Sources */,
 				E06B053E21C0B45800FCB0B8 /* Builder2.swift in Sources */,
 				E06B054221C0E37700FCB0B8 /* FactoryMethod.swift in Sources */,
 				E06B054021C0DE2300FCB0B8 /* SimpleFactory.swift in Sources */,
 				E06B053C21C0AB9100FCB0B8 /* Builder.swift in Sources */,
+				E06B054821C1F84A00FCB0B8 /* Bridge.swift in Sources */,
 				E06B052C21BE35E900FCB0B8 /* Singleton.swift in Sources */,
 				E06B053821BFAD4400FCB0B8 /* ChainOfResponsibility2.swift in Sources */,
 				E06B053621BFAD4400FCB0B8 /* ChainOfResponsibility.swift in Sources */,
 				E06B053A21BFB03300FCB0B8 /* Decorator.swift in Sources */,
+				E06B054A21C2075800FCB0B8 /* Composite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
