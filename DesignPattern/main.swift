@@ -106,6 +106,39 @@ let file1 = imageFile(name: "图片1"), file2 = imageFile(name: "图片2")
 folder.add(file: file1)
 folder.add(file: file2)
 folder.killVirus()
+/*********** 外观模式 Facade ***********/
+print("/*********** 外观模式 Facade ***********/")
+let facade = EncryptFacade()
+facade.fileEncrypt()
+/*********** 享元模式 Flyweight ***********/
+print("/*********** 享元模式 Flyweight ***********/")
+let black1,black2,white1,white2: IgoChessman
+let factory = IgoChessmanFactory.instance
+black1 = factory.getIgoChessman(key: "b")
+black2 = factory.getIgoChessman(key: "b")
+white1 = factory.getIgoChessman(key: "w")
+white2 = factory.getIgoChessman(key: "w")
+black1.display(coord: Coordinates(x: 2, y: 5))
+white1.display(coord: Coordinates(x: 22, y: 52))
+/*********** 代理模式 Proxy ***********/
+print("/*********** 代理模式 Proxy ***********/")
+let searcher: Searcher = ProxySearcher()
+searcher.doSearch()
+/*********** 命令模式 Command ***********/
+print("/*********** 命令模式 Command ***********/")
+let fb1 = FunctionButton(name: "功能键1")
+let fb2 = FunctionButton(name: "功能键2")
+fb1.command = MinimizeCommand()
+fb2.command = HelpCommand()
+fb1.onClick()
+fb2.onClick()
+print("/*********** 命令模式2 Command2 ***********/")
+let calc = CalculatorForm()
+calc.command = ConcreteCommand()
+calc.compute(value: 10)
+calc.compute(value: 5)
+calc.undo()
+calc.undo()
 
 
 
