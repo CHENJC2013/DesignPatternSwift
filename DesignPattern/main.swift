@@ -139,6 +139,10 @@ calc.compute(value: 10)
 calc.compute(value: 5)
 calc.undo()
 calc.undo()
+print("/*********** 解释器模式2 Interpreter2 ***********/")
+let handler = InstructionHandler.init()
+handler.handle(instruction: "up move 5 and down run 10 and left move 5")
+handler.output()
 
 
 
