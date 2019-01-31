@@ -143,6 +143,44 @@ print("/*********** 解释器模式2 Interpreter2 ***********/")
 let handler = InstructionHandler.init()
 handler.handle(instruction: "up move 5 and down run 10 and left move 5")
 handler.output()
+print("/*********** 迭代器模式 iTerator ***********/")
+let products = ["倚天剑","屠龙刀","断肠草","葵花宝典","四十二章经"]
+let list = ProductList.init(objects: products)
+let iterator = list.abstractIterator()
+while !iterator.isLast() {
+    print(iterator.getNextItem())
+    iterator.next()
+}
 
+list.removeObject(index: 2)
 
+while !iterator.isFirst() {
+    print(iterator.getPreviousItem())
+    iterator.previous()
+}
+print("/*********** 中介者模式 Mediator ***********/")
+let mediator = ConcreteMediator.init()
+let comboboxM = ComboBoxM.init(m: mediator)
+let textM = TextBoxM.init(m: mediator)
 
+comboboxM.change()
+print("/*********** 备忘录模式 Memento ***********/")
+let chess = Chessman.init(label: "车", x: 1, y: 1)
+let mc = MementoCaretaker.init()
+let util = Util.init(care: mc, chess: chess)
+util.play()
+
+chess.y = 4
+util.play()
+util.play()
+chess.x = 5
+util.play()
+util.undo()
+util.undo()
+util.redo()
+util.redo()
+print("/*********** 观察者模式 Observer ***********/")
+var observerInstance = Observer()
+var testChambers = TestChambers()
+testChambers.observer = observerInstance
+testChambers.testChamberNumber += 1
