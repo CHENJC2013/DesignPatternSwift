@@ -184,3 +184,27 @@ var observerInstance = Observer()
 var testChambers = TestChambers()
 testChambers.observer = observerInstance
 testChambers.testChamberNumber += 1
+print("/*********** 状态模式 State ***********/")
+let acc = Account.init(owner: "段誉", initial: 0.0)
+let state = NormalState.init(acc: acc)
+acc.state = state
+acc.deposit(amout: 1000)
+acc.withdraw(amout: 2000)
+acc.deposit(amout: 3000)
+acc.withdraw(amout: 4000)
+acc.withdraw(amout: 1000)
+acc.computeInterest()
+
+let s1 = Switch.init(name: "开关1")
+let s2 = Switch.init(name: "开关2")
+s1.on()
+s2.on()
+s1.off();
+s2.off();
+s2.on();
+s1.on();
+
+
+
+
+

@@ -32,6 +32,7 @@
 		E06B055C220176FD00FCB0B8 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B055B220176FD00FCB0B8 /* Mediator.swift */; };
 		E06B055E220185A600FCB0B8 /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B055D220185A600FCB0B8 /* Memento.swift */; };
 		E06B05602201A76000FCB0B8 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B055F2201A76000FCB0B8 /* Observer.swift */; };
+		E06B0562220291C400FCB0B8 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B0561220291C400FCB0B8 /* State.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +74,7 @@
 		E06B055B220176FD00FCB0B8 /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
 		E06B055D220185A600FCB0B8 /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
 		E06B055F2201A76000FCB0B8 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		E06B0561220291C400FCB0B8 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				E06B055B220176FD00FCB0B8 /* Mediator.swift */,
 				E06B055D220185A600FCB0B8 /* Memento.swift */,
 				E06B055F2201A76000FCB0B8 /* Observer.swift */,
+				E06B0561220291C400FCB0B8 /* State.swift */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				E06B055C220176FD00FCB0B8 /* Mediator.swift in Sources */,
 				E06B055221C398DA00FCB0B8 /* Command.swift in Sources */,
 				E06B054221C0E37700FCB0B8 /* FactoryMethod.swift in Sources */,
+				E06B0562220291C400FCB0B8 /* State.swift in Sources */,
 				E06B054C21C34CF500FCB0B8 /* Facade.swift in Sources */,
 				E06B054021C0DE2300FCB0B8 /* SimpleFactory.swift in Sources */,
 				E06B055421C8A1CE00FCB0B8 /* Command_Calc.swift in Sources */,
