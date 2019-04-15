@@ -18,7 +18,7 @@ import Foundation
  (2) 客户端只知道传入工厂类的参数，对于如何创建对象并不关心。
  */
 
-//抽象图表接口：抽象产品类
+//抽象产品类
 protocol Chart {
     func display()
 }
@@ -55,6 +55,10 @@ class Chart2 {
     }
     
     //静态工厂方法
+    /*static静态函数：
+        1、static函数在内存中只有一份，普通函数在每个被调用中维持一份拷贝。
+        2、类可以直接访问，无需实例化
+     */
     static func getChart(type: String) -> Chart {
         var chart: Chart?
         if type == "histogram" {

@@ -33,6 +33,7 @@
 		E06B055E220185A600FCB0B8 /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B055D220185A600FCB0B8 /* Memento.swift */; };
 		E06B05602201A76000FCB0B8 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B055F2201A76000FCB0B8 /* Observer.swift */; };
 		E06B0562220291C400FCB0B8 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B0561220291C400FCB0B8 /* State.swift */; };
+		E08FEB87225C708500585768 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08FEB86225C708500585768 /* Visitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,6 +76,7 @@
 		E06B055D220185A600FCB0B8 /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
 		E06B055F2201A76000FCB0B8 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		E06B0561220291C400FCB0B8 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		E08FEB86225C708500585768 /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +111,6 @@
 			children = (
 				E06B052421BE35DE00FCB0B8 /* main.swift */,
 				E06B052B21BE35E900FCB0B8 /* Singleton.swift */,
-				E06B053321BFAD4400FCB0B8 /* ChainOfResponsibility.swift */,
-				E06B053521BFAD4400FCB0B8 /* ChainOfResponsibility2.swift */,
 				E06B053421BFAD4400FCB0B8 /* Prototype.swift */,
 				E06B053921BFB03300FCB0B8 /* Decorator.swift */,
 				E06B053B21C0AB9100FCB0B8 /* Builder.swift */,
@@ -124,6 +124,8 @@
 				E06B054B21C34CF500FCB0B8 /* Facade.swift */,
 				E06B054D21C3503400FCB0B8 /* Flyweight.swift */,
 				E06B054F21C388A100FCB0B8 /* Proxy.swift */,
+				E06B053321BFAD4400FCB0B8 /* ChainOfResponsibility.swift */,
+				E06B053521BFAD4400FCB0B8 /* ChainOfResponsibility2.swift */,
 				E06B055121C398DA00FCB0B8 /* Command.swift */,
 				E06B055321C8A1CE00FCB0B8 /* Command_Calc.swift */,
 				E06B055521C9E98100FCB0B8 /* Interpreter.swift */,
@@ -133,6 +135,7 @@
 				E06B055D220185A600FCB0B8 /* Memento.swift */,
 				E06B055F2201A76000FCB0B8 /* Observer.swift */,
 				E06B0561220291C400FCB0B8 /* State.swift */,
+				E08FEB86225C708500585768 /* Visitor.swift */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				E06B055821DC8D8D00FCB0B8 /* Interpreter2.swift in Sources */,
 				E06B055E220185A600FCB0B8 /* Memento.swift in Sources */,
 				E06B053A21BFB03300FCB0B8 /* Decorator.swift in Sources */,
+				E08FEB87225C708500585768 /* Visitor.swift in Sources */,
 				E06B054A21C2075800FCB0B8 /* Composite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

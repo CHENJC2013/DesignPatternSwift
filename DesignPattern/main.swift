@@ -44,15 +44,18 @@ atm.canWithdraw(amount: 100) // Can withdraw - 1x100
 atm.canWithdraw(amount: 165) // Cannot withdraw because ATM doesn't has bill with value of 5
 atm.canWithdraw(amount: 30)  // Can withdraw - 1x20, 2x10
 
-/*********** 原型模式 Prototype ***********/
+print("/*********** 原型模式 Prototype ***********/")
 let pm = PrototypeManager.instance
-let doc1,doc2,doc3: OfficialDocument
+let doc1,doc2,doc3, doc4: OfficialDocument
 doc1 = pm.offcialDocument(key: "far")
 doc2 = pm.offcialDocument(key: "far")
+doc3 = pm.offcialDocument(key: "srs")
+doc4 = pm.offcialDocument(key: "srs")
 
 print("\( unsafeBitCast(doc1.attachment, to: Int.self)) --- \( unsafeBitCast(doc2.attachment, to: Int.self))")
+print("\( unsafeBitCast(doc3.attachment, to: Int.self)) --- \( unsafeBitCast(doc4.attachment, to: Int.self))")
 
-/*********** 装饰器模式 Decorator ***********/
+print("/*********** 装饰器模式 Decorator ***********/")
 let component,componentSB,componentBB: Component
 component = Window()
 componentSB = ScrollBarDecorator(comp: component)
@@ -105,6 +108,12 @@ let folder = Folder()
 let file1 = imageFile(name: "图片1"), file2 = imageFile(name: "图片2")
 folder.add(file: file1)
 folder.add(file: file2)
+let folder2 = Folder()
+folder2.add(file: imageFile.init(name: "文件1"))
+folder2.add(file: imageFile.init(name: "文件2"))
+folder2.name = "文件夹2"
+folder.add(file: folder2)
+
 folder.killVirus()
 /*********** 外观模式 Facade ***********/
 print("/*********** 外观模式 Facade ***********/")
@@ -204,7 +213,24 @@ s2.off();
 s2.on();
 s1.on();
 
+print("/*********** 访问者模式 Visitor ***********/")
+var employeeList = EmployeeList.init()
+var fte1, fte2, fte3, pte1, pte2: Employee
+fte1 = FulltimeEmplyee.init(name: "张无忌", weeklyWage: 3200, workTime: 45)
+fte2 = FulltimeEmplyee.init(name: "杨过", weeklyWage: 2000, workTime: 40)
+fte3 = FulltimeEmplyee.init(name: "段誉", weeklyWage: 2800, workTime: 38)
+pte1 = ParttimeEmployee.init(name: "洪七公", hourWage: 80, workTime: 20)
+pte2 = ParttimeEmployee.init(name: "郭靖", hourWage: 60, workTime: 18)
+employeeList.addEmployee(emp: fte1)
+employeeList.addEmployee(emp: fte2)
+employeeList.addEmployee(emp: fte3)
+employeeList.addEmployee(emp: pte1)
+employeeList.addEmployee(emp: pte2)
 
-
+var dep = FADepartment.init()
+employeeList.accept(handler: dep)
+print("---------")
+var dep2 = HRDepartment.init()
+employeeList.accept(handler: dep2)
 
 
